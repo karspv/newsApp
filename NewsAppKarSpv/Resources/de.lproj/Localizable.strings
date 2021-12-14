@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  NewsAppKarSpv
+
+  Created by Yannick Vanderstraeten on 2021-05-27.
+  
+*/
+
+"Source List" = "Quellenverzeichnis";
+"Something went wrong while loading the data :(" = "Beim Laden der Daten ist ein Fehler aufgetreten :(";
+"OK" = "OK";
+"Oops!" = "Oops!";
+"Learn More" = "Erfahren Sie mehr";
+"Looks like you don't have any favourite articles. Go to source screen and add some :)" = "Sieht so aus, als hätten Sie keine Lieblingsartikel. Gehen Sie zum Quellbildschirm und fügen Sie einige hinzu :)";
+"Favourites" = "Favoritinnen";
+"Sort Favourites By:" = "Favoriten sortieren nach:";
+"Sort By Title" = "Sortierung nach Titel";
+"Sort By Date" = "Nach Datum sortieren";
+"No Sort" = "Keine Sortierung";
+"Cancel" = "Stornieren";
+"Sort" = "Sortieren";
+"Search article by title or description." =  "Artikel nach Titel oder Beschreibung suchen.";
+"Extra" = "Extra";
+"Extra Stuff" = "Extra Zeug";
+"Really Extra Map View Cell" = "Wirklich extra Kartenansicht Zelle";
+"Really Extra Web Page Cell" = "Wirklich zusätzliche Webseitenzelle";
+"Really Extra Image Picker Cell" = "Wirklich zusätzliche Bildauswahlzelle";
+"Random user" = "Zufälliger Benutzer";
+"Extra nice user" = "Extra netter Benutzer";
+"Another random user" = "Ein anderer zufälliger Benutzer";
+"Simple pimple user" = "Einfacher Benutzer";
+"Photo library" = "Fotobibliothek";
+"Take photo" = "Foto machen";
+"Map" = "Karte";
+"Web Page" = "die Webseite";
+"Image Picker" = "Bildauswahl";

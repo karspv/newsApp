@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  NewsAppKarSpv
+
+  Created by Karolis on 2021-05-28.
+  
+*/
+
+NSLocationAlwaysUsageDescription = "Bitte erlauben Sie uns, Ihren aktuellen Standort zu ermitteln.";
+NSLocationWhenInUseUsageDescription = "Bitte erlauben Sie uns, Ihren aktuellen Standort zu ermitteln.";
+NSLocationAlwaysAndWhenInUseUsageDescription = "Bitte erlauben Sie uns, Ihren aktuellen Standort zu ermitteln.";
+NSCameraUsageDescription = "Diese App möchte Bilder aufnehmen.";
+NSPhotoLibraryUsageDescription = "Diese App möchte Ihre Fotos verwenden.";
+NSPhotoLibraryAddUsageDescription = "Diese App möchte Ihre Fotos verwenden.";

@@ -1,0 +1,102 @@
+{
+    "environment": {
+        "projectName": "NewsAppKarSpv",
+        
+        // Leave it null if workspace doesn't exist otherwise use workspace name here
+        "workspaceName": "NewsAppKarSpv",
+        "sourcePath": "NewsAppKarSpv",
+        "reportPath": "build/report",
+        "outputPath": "build/output"
+    },
+    "stages": {
+        "setUp": {
+            "title": "Set Up",
+            "cocoaPods": {
+                // If your pods are commited to repository then you should leave `isEnabled` as false
+                "isEnabled": false,
+                "podFile": "Podfile"
+            },
+            "carthage": {
+                "isEnabled": false,
+                "platform": "iOS"
+            }
+        },
+        "test": {
+            "isEnabled": true,
+            "title": "Test",
+            
+            // Value should refer to host target name of test target.
+            "hostScheme": "NewsAppKarSpv",
+            
+            // Available options are depends on devices installed in Jenkins machine
+            // Available-options: https://github.com/fastlane/fastlane/blob/master/scan/spec/test_command_generator_spec.rb
+            "devices": ["iPhone 8"],
+            "isCoverageEnabled": true
+        },
+        "analyze": {
+            "title": "Analyze",
+            "swiftLint": {
+                "isEnabled": true,
+                "rulesFile": "swiftlint.yml"
+            },
+            "copyPasteDetection": {
+                "isEnabled": true
+            },
+            "linesCount": {
+                "isEnabled": true,
+                
+                // By default lines count tool will count all lines under path you described in `environment.sourcePath`
+                // But you still can exclude some directories by adding them to list below
+                "doNotCountLinesInDirectories": ["Resources"]
+            }
+        },
+        "build": {
+            "isEnabled": true,
+            "title": "Build",
+            "archives": [
+                {
+                    // Any value as long as it is unique between archives
+                    "archiveId": "0",
+                    
+                    // Available-options: Release, Debug
+                    "configuration": "Release",
+                    "scheme": "NewsAppKarSpv",
+                    
+                    // Export method should match the `provisioningProfiles` you will be using for this build
+                    // Available-options: app-store, ad-hoc, enterprise, development
+                    "exportMethod": "ad-hoc",
+                    "provisioningProfiles": [
+                        {
+                            "id": "com.telesoftas.NewsAppKarSpv",
+                            "name": "NewsAppKarSpv Ad Hoc"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "title": "Distribution",
+            "firebase": {
+                "isEnabled": true,
+                "deploymentItems": [
+                    {
+                        "deploymentTrigger": {
+                            "gitTag": {
+                                "isEnabled": true,
+                                
+                                // empty string means that deployment will be triggered for any tag in commit
+                                // specifying `tagNameContains` will trigger deployments only when tag in commit contains specified value
+                                "tagNameContains": "Test_release-0.0v"
+                            },
+                        },
+                        // `archiveId` is used to find `*.ipa` file for deployment
+                        // `*.ipa` files was created during build stage
+                        "archiveId": "0",
+                        "firebaseAppId": "1:12439275990:ios:a393336d85b2869b8dbc77",
+                        "testersGroupIds": ["telesoftas"]
+                    }
+                ]
+            }
+        }
+    }
+}

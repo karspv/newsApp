@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleDetailsViewController" customModule="NewsAppKarSpv" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="igG-7b-Pcv" id="gNp-An-tLb"/>
+                <outlet property="contentView" destination="fTy-bJ-ILn" id="x7N-38-rek"/>
+                <outlet property="descriptionLabel" destination="TDX-AO-u7B" id="Pjh-72-Rh4"/>
+                <outlet property="favouriteButton" destination="Nej-OZ-vyH" id="c9L-Wy-2UV"/>
+                <outlet property="learnMoreButton" destination="v3Y-aC-aBF" id="2KD-Uq-20u"/>
+                <outlet property="photoImageView" destination="eHx-aD-ztO" id="8T3-Zh-Iao"/>
+                <outlet property="publishDateLabel" destination="I0d-W8-rkC" id="wyF-mQ-7eY"/>
+                <outlet property="stackView" destination="kaS-S9-zTJ" id="4oc-Th-bHE"/>
+                <outlet property="titleLabel" destination="3cq-bm-1nU" id="kNb-Lk-xHa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvu-io-3ld">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTy-bJ-ILn" userLabel="PanelView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kaS-S9-zTJ" userLabel="StackView">
+                                    <rect key="frame" x="10" y="10" width="394" height="719"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-01-10 11:14:46" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0d-W8-rkC" userLabel="PublishDate">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="26I-4M-A7b">
+                                            <rect key="frame" x="0.0" y="30.5" width="394" height="45.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Note: Democrats' resolve grows as Trump hits boarder" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-bm-1nU" userLabel="Title">
+                                                    <rect key="frame" x="0.0" y="0.0" width="339" height="45.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nej-OZ-vyH" userLabel="FavouriteButton" customClass="FavouriteButton" customModule="NewsAppKarSpv" customModuleProvider="target">
+                                                    <rect key="frame" x="354" y="3" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="idS-5U-GZu"/>
+                                                        <constraint firstAttribute="width" constant="40" id="jPH-i3-GZ6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <state key="normal">
+                                                        <imageReference key="backgroundImage" image="unfavourited-star" symbolScale="small"/>
+                                                    </state>
+                                                    <state key="disabled" backgroundImage="loading-start"/>
+                                                    <state key="selected" image="favourited-star" backgroundImage="favourited-star"/>
+                                                    <state key="highlighted" image="loading-start" backgroundImage="loading-start"/>
+                                                    <connections>
+                                                        <action selector="didTapFavouriteButton:" destination="-1" eventType="touchUpInside" id="Idj-VT-T7d"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eHx-aD-ztO" userLabel="Image">
+                                            <rect key="frame" x="0.0" y="92" width="394" height="295.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="500" id="9w6-7L-zRw"/>
+                                                <constraint firstAttribute="width" secondItem="eHx-aD-ztO" secondAttribute="height" multiplier="1:1" id="Nn2-DM-ZTX"/>
+                                                <constraint firstAttribute="width" secondItem="eHx-aD-ztO" secondAttribute="height" multiplier="4:3" id="bbD-X6-4jQ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9w6-7L-zRw"/>
+                                                    <exclude reference="Nn2-DM-ZTX"/>
+                                                    <exclude reference="bbD-X6-4jQ"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=compact-widthClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="9w6-7L-zRw"/>
+                                                    <exclude reference="Nn2-DM-ZTX"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="bbD-X6-4jQ"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDX-AO-u7B" userLabel="Description">
+                                            <rect key="frame" x="0.0" y="403.5" width="394" height="72"/>
+                                            <string key="text">Democrats have found as issue that unites their new majority and strengthens the position of Senate Minority Leader Chuck Schumer and House Speaker Nancy Polosi.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igG-7b-Pcv" userLabel="Content">
+                                            <rect key="frame" x="0.0" y="491.5" width="394" height="161.5"/>
+                                            <string key="text">Trump continues to say he's channeling the broader Republican Party in insisting on a wall as the price for reopening the government. But that's a far less certain proposition than the view among Democrats that Trump's coalition isn't holding. Trump continues to say he's channeling the broader Republican Party in insisting on a wall as the price for reopening the government. But that's a far less certain proposition than the view among Democrats that Trump's coalition isn't holding.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3Y-aC-aBF" userLabel="LearnMoreButton">
+                                            <rect key="frame" x="0.0" y="669" width="394" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="aBR-CC-aKG"/>
+                                            </constraints>
+                                            <state key="normal" title="Open URL">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapLearnMoreButton:" destination="-1" eventType="touchUpInside" id="PNf-zo-9XB"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="igG-7b-Pcv" secondAttribute="trailing" id="2Qw-Rn-bbJ"/>
+                                        <constraint firstItem="TDX-AO-u7B" firstAttribute="top" secondItem="eHx-aD-ztO" secondAttribute="bottom" constant="16" id="DYn-WS-QOb"/>
+                                        <constraint firstAttribute="trailing" secondItem="26I-4M-A7b" secondAttribute="trailing" id="UKL-h3-ryR"/>
+                                        <constraint firstItem="v3Y-aC-aBF" firstAttribute="top" secondItem="igG-7b-Pcv" secondAttribute="bottom" constant="16" id="a9o-c5-g2Y"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="UKL-h3-ryR"/>
+                                            <exclude reference="DYn-WS-QOb"/>
+                                            <exclude reference="2Qw-Rn-bbJ"/>
+                                            <exclude reference="a9o-c5-g2Y"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=regular">
+                                        <mask key="constraints">
+                                            <include reference="UKL-h3-ryR"/>
+                                            <include reference="2Qw-Rn-bbJ"/>
+                                            <include reference="a9o-c5-g2Y"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="DYn-WS-QOb"/>
+                                        </mask>
+                                    </variation>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kaS-S9-zTJ" secondAttribute="trailing" constant="10" id="BOb-5Q-6bj"/>
+                                <constraint firstItem="kaS-S9-zTJ" firstAttribute="leading" secondItem="fTy-bJ-ILn" secondAttribute="leading" constant="10" id="R66-Jd-zAR"/>
+                                <constraint firstItem="kaS-S9-zTJ" firstAttribute="top" secondItem="fTy-bJ-ILn" secondAttribute="top" constant="10" id="f1p-RJ-OZy"/>
+                                <constraint firstAttribute="bottom" secondItem="kaS-S9-zTJ" secondAttribute="bottom" id="kSt-cu-SB2"/>
+                                <constraint firstAttribute="trailing" secondItem="TDX-AO-u7B" secondAttribute="trailing" constant="10" id="wgm-sl-dRV">
+                                    <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                </constraint>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="wgm-sl-dRV"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact-widthClass=regular">
+                                <mask key="constraints">
+                                    <exclude reference="wgm-sl-dRV"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fTy-bJ-ILn" firstAttribute="top" secondItem="Tvu-io-3ld" secondAttribute="top" id="3PJ-S9-aet"/>
+                        <constraint firstItem="fTy-bJ-ILn" firstAttribute="width" secondItem="Tvu-io-3ld" secondAttribute="width" multiplier="1:2" id="JbN-RD-ixY"/>
+                        <constraint firstAttribute="width" secondItem="fTy-bJ-ILn" secondAttribute="width" multiplier="1:1" id="fP7-O8-ZJr"/>
+                        <constraint firstItem="fTy-bJ-ILn" firstAttribute="trailing" secondItem="Tvu-io-3ld" secondAttribute="trailing" id="g6p-VT-SbL">
+                            <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                        </constraint>
+                        <constraint firstItem="fTy-bJ-ILn" firstAttribute="bottom" secondItem="Tvu-io-3ld" secondAttribute="bottom" id="gTC-4Q-vdg"/>
+                        <constraint firstItem="fTy-bJ-ILn" firstAttribute="leading" secondItem="Tvu-io-3ld" secondAttribute="leading" id="hZC-WO-P2o">
+                            <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fP7-O8-ZJr"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="JbN-RD-ixY"/>
+                            <include reference="fP7-O8-ZJr"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Tvu-io-3ld" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EoQ-Nj-yJc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Tvu-io-3ld" secondAttribute="bottom" id="PxL-cR-I9R"/>
+                <constraint firstItem="Tvu-io-3ld" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RiC-h6-c2x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tvu-io-3ld" secondAttribute="trailing" id="Sjl-Fd-KZg"/>
+                <constraint firstItem="Tvu-io-3ld" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aw7-rf-vVg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RiC-h6-c2x"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="RiC-h6-c2x"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-146.65178571428569" y="71.014492753623188"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favourited-star" width="20" height="19"/>
+        <image name="loading-start" width="24" height="24"/>
+        <image name="unfavourited-star" width="20" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

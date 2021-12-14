@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="ArticleListTableViewCell" customModule="NewsAppKarSpv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="TopLeft" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4e2-tr-aCF">
+                        <rect key="frame" x="16" y="15" width="460" height="121"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I6G-pj-37c">
+                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="94"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I6G-pj-37c" secondAttribute="height" multiplier="4:3" id="071-3L-ZVD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Note: Democrats' resolve grows as Tru..." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmd-gc-lyT">
+                                <rect key="frame" x="130.5" y="0.0" width="284.5" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mm-oH-9e7" userLabel="FavouriteButton" customClass="FavouriteButton" customModule="NewsAppKarSpv" customModuleProvider="target">
+                                <rect key="frame" x="420" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fSA-l4-6kG"/>
+                                    <constraint firstAttribute="width" constant="40" id="k9S-bv-ILN"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="unfavourited-star"/>
+                                <state key="disabled" backgroundImage="loading-start"/>
+                                <state key="selected" image="favourited-star" backgroundImage="favourited-star"/>
+                                <state key="highlighted" image="loading-start" backgroundImage="loading-start"/>
+                                <connections>
+                                    <action selector="didTapFavouriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fVj-Mn-gkg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvp-Ut-uFa">
+                        <rect key="frame" x="16" y="146" width="460" height="61"/>
+                        <string key="text">Democrats have found as issue that unites their new majority and strengthens the position of Senate Minority Leader Chuck Schumer and House Speaker Nancy Polosi.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-01-10 11:14:46" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X73-4h-IEE">
+                        <rect key="frame" x="16" y="217" width="460" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4e2-tr-aCF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="5ES-NT-pXQ"/>
+                    <constraint firstItem="Qvp-Ut-uFa" firstAttribute="leading" secondItem="4e2-tr-aCF" secondAttribute="leading" id="Ckh-1O-csT"/>
+                    <constraint firstAttribute="bottom" secondItem="X73-4h-IEE" secondAttribute="bottom" constant="10" id="JWf-nx-Qti"/>
+                    <constraint firstItem="I6G-pj-37c" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="NMt-ED-sA9"/>
+                    <constraint firstItem="4e2-tr-aCF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Tgw-Cx-5qG"/>
+                    <constraint firstItem="X73-4h-IEE" firstAttribute="top" secondItem="Qvp-Ut-uFa" secondAttribute="bottom" constant="10" id="cvz-hZ-HbY"/>
+                    <constraint firstItem="Qvp-Ut-uFa" firstAttribute="top" secondItem="4e2-tr-aCF" secondAttribute="bottom" constant="10" id="dtd-PW-p1Y"/>
+                    <constraint firstItem="X73-4h-IEE" firstAttribute="trailing" secondItem="Qvp-Ut-uFa" secondAttribute="trailing" id="eGL-eP-OCy"/>
+                    <constraint firstItem="X73-4h-IEE" firstAttribute="leading" secondItem="Qvp-Ut-uFa" secondAttribute="leading" id="jjX-gm-f4l"/>
+                    <constraint firstItem="Qvp-Ut-uFa" firstAttribute="trailing" secondItem="4e2-tr-aCF" secondAttribute="trailing" id="nQB-dd-vOh"/>
+                    <constraint firstAttribute="trailing" secondItem="4e2-tr-aCF" secondAttribute="trailing" constant="26" id="o2c-I7-Huu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Qvp-Ut-uFa" id="U7s-iH-l8A"/>
+                <outlet property="favouriteButton" destination="9Mm-oH-9e7" id="0jU-Wz-fmH"/>
+                <outlet property="imageAndTitleStackView" destination="4e2-tr-aCF" id="9yG-ja-1Ec"/>
+                <outlet property="photoImageView" destination="I6G-pj-37c" id="EZu-3u-8np"/>
+                <outlet property="publishDateLabel" destination="X73-4h-IEE" id="flj-dN-C1M"/>
+                <outlet property="titleLabel" destination="tmd-gc-lyT" id="vGq-6p-E96"/>
+            </connections>
+            <point key="canvasLocation" x="-205.79710144927537" y="126.22767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favourited-star" width="20" height="19"/>
+        <image name="loading-start" width="24" height="24"/>
+        <image name="unfavourited-star" width="20" height="19"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

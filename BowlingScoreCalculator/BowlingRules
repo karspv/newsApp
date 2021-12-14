@@ -1,0 +1,55 @@
+Terms and Rules:
+
+* Frame/Pins - bowling consists of ten frames. In each frame, the bowler will have two chances to knock down as many pins as possible with their bowling ball.
+* Strike - If a bowler is able to knock down all ten pins with their first ball, he is awarded a strike
+* Spare - If the bowler is able to knock down all 10 pins with the two balls of a frame, it is known as a spare.
+* 10th FRAME:
+    If the bowler knocks down all 10 pins in the tenth frame, the bowler is allowed to throw 3 balls for that frame. This allows for a potential of 12 strikes in a single game, and a maximum score of 300 points.
+    A player who bowls a strike in the tenth (final) frame is awarded two extra balls so as to allow the awarding of bonus points. If both these balls also result in strikes, a total of 30 points (10 + 10 + 10) is awarded for the (10th) frame. These bonus points do not count on their own; they only count as the bonus for the strike.
+
+Scoring:
+* For Strike - a player is awarded ten points, plus a bonus of whatever is scored with the next two balls
+E.g.:
+Frame 1, ball 1: 10 pins (strike) Frame 2, ball 1: 3 pins Frame 2, ball 2: 6 pins
+The total score from these throws is:
+Frame one: 10 + (3 + 6) = 19 Frame two: 3 + 6 = 9 TOTAL = 28
+A player who scores multiple strikes in succession would score like so:
+Frame 1, ball 1: 10 pins (strike) Frame 2, ball 1: 10 pins (strike) Frame 3, ball 1: 4 pins Frame 3, ball 2: 2 pins
+The score from these throws are:
+Frame one: 10 + (10 + 4) = 24 Frame two: 10 + (4 + 2) = 16 Frame three: 4 + 2 = 6 TOTAL = 46
+
+
+* For Spare - A player achieving a spare is awarded ten points, plus a bonus of whatever is scored with the next ball (only the first ball is counted).
+E.g.:
+Frame 1, ball 1: 7 pins Frame 1, ball 2: 3 pins (spare) Frame 2, ball 1: 4 pins Frame 2, ball 2: 2 pins
+The total score from these throws is:
+Frame one: 7 + 3 + 4 (bonus) = 14 Frame two: 4 + 2 = 6 TOTAL = 20
+
+
+App Requirements:
+
+Write an App which could be used to generate data (calculate scores), for game session. E.g. so that such screen could be rendered:
+https://static.gosquared.com/images/liquidicity/13_06_07_measurebowling_02.jpg
+
+Must be done in teams + must be done using TDD - test first, code later.
+
+Side suggestions:
+* Data may be provided as a list of all recorded throws
+e.g. let throwsList = [8, 2, 1, 0, …]
+ScoresCalculator.addThrows: throwList
+let results = ScoresCalculator.calculateResults
+
+* Or as single throw:
+e.g. ScoresCalculator.addThrow(8),
+ScoresCalculator.addThrow(2),
+ScoresCalculator.addThrow(1),
+ScoresCalculator.addThrow(0)…
+let results = ScoresCalculator.calculateResults
+
+ALSO:
+    •    We will not check for valid rolls.
+    •    We will not check for correct number of rolls and frames.
+    •    We will not provide scores for intermediate frames.
+
+So: all provided data is correct, e.g. no score higher of 10 entered,
+also data is provided for full game.

@@ -1,0 +1,6 @@
+framework module Pods_NewsAppKarSpvTests {
+  umbrella header "Pods-NewsAppKarSpvTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

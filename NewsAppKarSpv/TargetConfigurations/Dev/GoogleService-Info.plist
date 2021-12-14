@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>12439275990-se2dtm1tc48odeejcn4vfg7snk76ovi1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.12439275990-se2dtm1tc48odeejcn4vfg7snk76ovi1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7eDQYRbclfFdfBM3BJ3-8VmQCluWbbOA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>12439275990</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.telesoftas.NewsAppKarSpv</string>
+	<key>PROJECT_ID</key>
+	<string>newsappkarspv</string>
+	<key>STORAGE_BUCKET</key>
+	<string>newsappkarspv.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:12439275990:ios:a393336d85b2869b8dbc77</string>
+</dict>
+</plist>

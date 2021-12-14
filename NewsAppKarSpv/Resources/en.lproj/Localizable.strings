@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  NewsAppKarSpv
+
+  Created by Yannick Vanderstraeten on 2021-05-27.
+  
+*/
+
+"Source List" = "Source List";
+"Something went wrong while loading the data :(" = "Something went wrong while loading the data :)";
+"OK" = "Supratau";
+"Oops!" = "Ūūps!";
+"Learn More" = "Sužinoti daugiau";
+"Looks like you don't have any favourite articles. Go to source screen and add some :)" = "Panašu, kad neturite pamėgtų straipsnių. Eikite į šaltinių ekraną ir pridėkite mėgstamą straipsnį :)";
+"Favourites" = "Mėgstamiausi";
+"Sort Favourites By:" = "Rikiuoti mėgstamiausius pagal:";
+"Sort By Title" = "Rikiuoti Pagal Pavadinimą";
+"Sort By Date" = "Rikiuoti Pagal Datą";
+"No Sort" = "Nerikiuoti";
+"Cancel" = "Atšaukti";
+"Sort" = "Rikiuoti";
+"Search article by title or description." =  "Ieškoti straipsnių pagal pavadinimą arba aprašą.";
+"Extra" = "Ekstra";
+"Extra Stuff" = "Papildomi dalykai";
+"Really Extra Map View Cell" = "Labai ekstra žemėlapio celė";
+"Really Extra Web Page Cell" = "Labai ekstra tinklapio celė";
+"Really Extra Image Picker Cell" = "Labai ekstra paveikslėlių pasirinkimo celė";
+"Random user" = "Atsitiktinis vartotojas";
+"Extra nice user" = "Itin malonus vartotojas";
+"Another random user" = "Kitas atsitiktinis vartotojas";
+"Simple pimple user" = "Paprastutits vartotojas";
+"Photo library" = "Nuotraukų biblioteka";
+"Take photo" = "Nufotografuoti";
+"Map" = "Žemėlapis";
+"Web Page" = "Tinklo puslapis";
+"Image Picker" = "Vaizdo parinkiklis";
