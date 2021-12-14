@@ -10,7 +10,8 @@ import Foundation
 
 // swiftlint:disable identifier_name
 class MockArticleApiClient: ArticleApiClientInterface {
-    
+
+    // Should we keep this?
     var loadArticleList_callCount = 0
     var loadArticleList_onSuccess_callback: (([ArticleEntity]) -> Void)?
     var loadArticleList_onError_callback: (() -> Void)?
